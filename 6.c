@@ -22,21 +22,21 @@ int main(void)
 
         int coin[4] = { 500, 100, 50, 10 }; //500원 100원 50원 10원
 
-        int money, limit=10000;
+        int nn, money, limit=10000;
         
         
-        while (money != limit)
-
+        do
         {
-
+		
+           
+           
                printf("금액입력(1만원이하): ");
 
                scanf("%d", &money);
-
-        }
+       
 
       
-
+        }while(money > limit);
         printCoin(coin, money - (500 + 100 + 50 + 10)); //동전들을 최소 한번씩은 사용했다
 
         return 0;
